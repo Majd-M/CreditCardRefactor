@@ -87,6 +87,7 @@ public class CardController {
     //Regex valifation of the date textfield
     public void dateValidate(){
         String date=dateText.getText();
+        //Allows Dates between 01/2010 to 12/2029
         String dateRegex="^((0[1-9])|(1[0-2]))\\/((2000)|(20[1-2][0-9]))$";
         Pattern pattern= Pattern.compile(dateRegex);
         Matcher m = pattern.matcher(date);
