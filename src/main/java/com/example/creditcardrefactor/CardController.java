@@ -31,7 +31,7 @@ public class CardController {
     public boolean validDate=false;
     public boolean validCVV=false;
 
-    public void onType(){
+    public void cardNumValidate(){
         String cardNum=creditText.getText();
 
         if(cardNum.startsWith("4")){
@@ -59,8 +59,7 @@ public class CardController {
             validNum=false;
         }
         isValidCard();
-//        System.out.println(cardNum);
-//        System.out.println("Validnum: "+validNum);
+
     }
 
     public void dateValidate(){
@@ -103,7 +102,7 @@ public class CardController {
 
     public static boolean isNumeric(String str) {
         try {
-            Double.parseDouble(str);
+            Integer.parseInt(str);
             return true;
         } catch(NumberFormatException e){
             return false;
