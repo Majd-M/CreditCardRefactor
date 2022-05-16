@@ -12,7 +12,7 @@ public class CreditCardAuth extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(CreditCardAuth.class.getResource("CardView.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Credit Card Validator");
         stage.setScene(scene);
         stage.show();
     }
